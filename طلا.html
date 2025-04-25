@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رشته حسابداری | هنرستان کار و دانش آل آقا</title>
+    
+    <!-- متاتگ‌های SEO -->
+    <meta name="description" content="آشنایی با رشته طلاسازی هنرستان فنی و حرفه‌ای نمونه - آموزش طراحی، ساخت و تولید جواهرات، گوهرشناسی و مرصع‌کاری با امکانات پیشرفته و اساتید مجرب">
+    <meta name="keywords" content="رشته طلاسازی، جواهرسازی، گوهرشناسی، مرصع‌کاری، طراحی طلا و جواهر، هنرستان کار و دانش">
+    
+    <!-- لینک‌های CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #d4af37;
+            --secondary-color: #9c7c38;
+            --accent-color: #f1c40f;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --success-color: #2ecc71;
+            --warning-color: #f39c12;
+            --gray-color: #6c757d;
+            --light-gray: #e9ecef;
+        }
+        
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .course-hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .course-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('images/jewelry-pattern.svg');
+            background-size: cover;
+            opacity: 0.1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--light-gray);
+        }
+        
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+        
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        /* Features Section */
+        .features-section {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.25rem;
+            color: var(--gray-color);
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            background-color: var(--light-gray);
+            color: var(--primary-color);
+        }
+        
+        .feature-icon i {
+            font-size: 2rem;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .feature-text {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+        
+        /* Curriculum Section */
+        .curriculum-section {
+            padding: 100px 0;
+            background-color: var(--light-color);
+        }
+        
+        .curriculum-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .tab-btn {
+            padding: 15px 30px;
+            border: none;
+            background: none;
+            font-family: 'Vazirmatn', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--gray-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .tab-btn::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        
+        .tab-btn.active {
+            color: var(--primary-color);
+        }
+        
+        .tab-btn.active::after {
+            width: 100%;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .curriculum-item {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .curriculum-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .curriculum-title {
+            font-size: 1.25rem;
+            margin: 0;
+            color: var(--dark-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .curriculum-title i {
+            color: var(--primary-color);
+        }
+        
+        .curriculum-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: var(--gray-color);
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .curriculum-desc {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+        
+        /* Equipment Section */
+        .equipment-section {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .equipment-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .equipment-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .equipment-image {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+        }
+        
+        .equipment-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .equipment-card:hover .equipment-image img {
+            transform: scale(1.1);
+        }
+        
+        .equipment-info {
+            padding: 25px;
+            background-color: white;
+        }
+        
+        .equipment-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+        
+        .equipment-desc {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+        
+        /* Jobs Section */
+        .jobs-section {
+            padding: 100px 0;
+            background-color: var(--light-color);
+        }
+        
+        .jobs-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .job-item {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .job-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .job-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            color: white;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        .job-icon i {
+            font-size: 1.75rem;
+        }
+        
+        .job-title {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .job-desc {
+            color: var(--gray-color);
+            margin-bottom: 20px;
+        }
+        
+        .job-salary {
+            font-weight: 500;
+            color: var(--success-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        /* Instructors Section */
+        .instructors-section {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .instructors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .instructor-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .instructor-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .instructor-image {
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .instructor-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .instructor-social {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .instructor-card:hover .instructor-social {
+            transform: translateY(0);
+        }
+        
+        .instructor-social a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .instructor-social a:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .instructor-info {
+            padding: 25px;
+            text-align: center;
+            background-color: white;
+        }
+        
+        .instructor-name {
+            font-size: 1.25rem;
+            margin-bottom: 5px;
+            color: var(--dark-color);
+        }
+        
+        .instructor-position {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .instructor-bio {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-text {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .curriculum-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .tab-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header would go here -->
+
+    <!-- Hero Section -->
+    <section class="course-hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>رشته طلاسازی</h1>
+                <p>آموزش تخصصی طراحی، ساخت و تولید جواهرات، گوهرشناسی و مرصع‌کاری با پیشرفته‌ترین تجهیزات و اساتید مجرب</p>
+                <div class="hero-btns">
+                    <a href="#curriculum" class="btn btn-primary">سرفصل‌های آموزشی</a>
+                    <a href="#registration" class="btn btn-outline">ثبت نام</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">چرا رشته طلاسازی؟</h2>
+            <p class="section-subtitle" data-aos="fade-up">ترکیبی از هنر و صنعت که علاوه بر خلاقیت، به آینده شغلی درخشان منجر می‌شود</p>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="feature-title">تلفیق هنر و صنعت</h3>
+                    <p class="feature-text">طلاسازی ترکیبی از خلاقیت هنری و مهارت‌های فنی است که منجر به خلق آثار زیبا و ارزشمند می‌شود.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">بازار کار پایدار</h3>
+                    <p class="feature-text">صنعت طلا و جواهر همواره از صنایع پردرآمد و پایدار بوده و تقاضا برای محصولات آن همیشه وجود دارد.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="feature-title">بروز خلاقیت</h3>
+                    <p class="feature-text">در این رشته می‌توانید استعدادهای هنری خود را بروز داده و طرح‌های منحصربه‌فرد و خلاقانه ایجاد کنید.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3 class="feature-title">کارآفرینی</h3>
+                    <p class="feature-text">امکان راه‌اندازی کارگاه، فروشگاه یا برند شخصی و تبدیل شدن به کارآفرین در این صنعت وجود دارد.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="feature-title">اعتبار جهانی</h3>
+                    <p class="feature-text">هنر و صنعت جواهرسازی ایرانی در جهان شناخته شده است و فرصت‌های بین‌المللی را فراهم می‌کند.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3 class="feature-title">درآمد بالا</h3>
+                    <p class="feature-text">متخصصان و طراحان طلا و جواهر معمولاً از درآمد بالا و امنیت شغلی مناسبی برخوردار هستند.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="curriculum-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">سرفصل‌های آموزشی</h2>
+            <p class="section-subtitle" data-aos="fade-up">آنچه در طول دوره سه ساله رشته طلاسازی خواهید آموخت</p>
+            
+            <div class="curriculum-tabs" data-aos="fade-up">
+                <button class="tab-btn active" data-target="year1">پایه دهم</button>
+                <button class="tab-btn" data-target="year2">پایه یازدهم</button>
+                <button class="tab-btn" data-target="year3">پایه دوازدهم</button>
+                <button class="tab-btn" data-target="workshops">کارگاه‌های تخصصی</button>
+            </div>
+            
+            <div class="tab-content active" id="year1">
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-drafting-compass"></i> مبانی طراحی جواهرات</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۱۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آشنایی با اصول اولیه طراحی، ترسیم دستی، پرسپکتیو، رنگ‌شناسی و کمپوزیسیون در طراحی جواهرات.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-ring"></i> آشنایی با فلزات گرانبها</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۹۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">شناخت خواص فیزیکی و شیمیایی فلزات طلا، نقره، پلاتین و آلیاژهای آنها، عیارسنجی و روش‌های تشخیص اصالت.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-tools"></i> ابزارشناسی و کارگاه مقدماتی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۰۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">معرفی و کاربرد انواع ابزارهای طلاسازی، تکنیک‌های پایه (برش، خم‌کاری، لحیم‌کاری، سوهان‌کاری) و ایمنی کار.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-gem"></i> مبانی گوهرشناسی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۸۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آشنایی با انواع سنگ‌های قیمتی و نیمه‌قیمتی، طبقه‌بندی، خواص فیزیکی و شیمیایی، سختی و تراش.</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="year2">
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-fire"></i> ذوب و ریخته‌گری</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۲۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آموزش تکنیک‌های ذوب فلزات گرانبها، ساخت قالب‌های مختلف، ریخته‌گری به روش‌های مومی و ماسه‌ای.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-cut"></i> تراش و پرداخت تخصصی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۰۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">تکنیک‌های تخصصی تراش فلزات، سوهان‌کاری ظریف، پولیش‌کاری، صیقل‌دهی و پرداخت نهایی به روش‌های مختلف.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-gem"></i> مرصع‌کاری</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۱۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آموزش تکنیک‌های نصب و تثبیت سنگ‌های قیمتی روی فلز، مرصع‌کاری چنگی، ریلی، کانالی و میکروستینگ.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-paint-brush"></i> مینا‌کاری و قلم‌زنی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۹۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آشنایی با تکنیک‌های سنتی تزئین فلزات، میناکاری روی فلز، قلم‌زنی، حکاکی و ملیله‌کاری.</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="year3">
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-laptop"></i> طراحی دیجیتال جواهرات</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۲۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آموزش نرم‌افزارهای تخصصی طراحی جواهرات (Rhino, Matrix, ZBrush)، مدل‌سازی سه‌بعدی و آماده‌سازی فایل برای پرینت.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-store"></i> مدیریت کسب و کار و بازاریابی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۸۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">اصول راه‌اندازی کارگاه طلاسازی، مدیریت مالی، قیمت‌گذاری، بازاریابی، برندسازی و فروش جواهرات.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-print"></i> تکنولوژی‌های نوین ساخت</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۰۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آشنایی با پرینت سه‌بعدی، تکنولوژی CNC، لیزر کات و سایر فناوری‌های مدرن در صنعت جواهرسازی.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-project-diagram"></i> پروژه نهایی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۵۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">طراحی و ساخت یک مجموعه جواهر از مرحله ایده تا محصول نهایی و ارائه آن در نمایشگاه پایان دوره.</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="workshops">
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-microscope"></i> کارگاه تخصصی گوهرشناسی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۸۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> در طول سال</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">تشخیص و ارزیابی تخصصی سنگ‌های قیمتی، کار با دستگاه‌های پیشرفته گوهرشناسی، آشنایی با خواص نوری و فیزیکی گوهرها.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-magic"></i> کارگاه تخصصی میناکاری</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۶۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> سال دوم و سوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">تکنیک‌های پیشرفته میناکاری روی فلزات گرانبها، ترکیب رنگ‌ها، طراحی سنتی و مدرن، تلفیق میناکاری با سایر تکنیک‌ها.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-cogs"></i> کارگاه مدل‌سازی و قالب‌گیری</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۷۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> سال دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">ساخت مدل‌های دقیق از موم، رزین و سایر مواد، قالب‌گیری سیلیکونی، تکثیر مدل‌ها و آماده‌سازی برای ریخته‌گری.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-palette"></i> کارگاه طراحی مجموعه جواهرات</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۹۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> سال سوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">طراحی کلکسیون‌های جواهر با تم و هویت مشخص، شناخت ترندهای بازار، تکنیک‌های ارائه و نمایش جواهرات.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section id="equipment" class="equipment-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">تجهیزات و امکانات</h2>
+            <p class="section-subtitle" data-aos="fade-up">هنرستان ما مجهز به پیشرفته‌ترین تجهیزات آموزشی در زمینه طلاسازی و جواهرسازی است</p>
+            
+            <div class="equipment-grid">
+                <div class="equipment-card" data-aos="fade-up">
+                    <div class="equipment-image">
+                        <img src="images/jewelry-workshop1.jpg" alt="کارگاه طلاسازی">
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-title">کارگاه طراحی و مدل‌سازی</h3>
+                        <p class="equipment-desc">مجهز به میزهای طراحی، نور مناسب، ابزارهای دقیق طراحی و سیستم‌های کامپیوتری با نرم‌افزارهای تخصصی.</p>
+                    </div>
+                </div>
+                
+                <div class="equipment-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="equipment-image">
+                        <img src="images/jewelry-workshop2.jpg" alt="کارگاه ریخته‌گری">
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-title">کارگاه ریخته‌گری</h3>
+                        <p class="equipment-desc">دارای کوره‌های ذوب دیجیتال، دستگاه‌های خلأ، سانتریفیوژ، تجهیزات ایمنی پیشرفته و سیستم تهویه قدرتمند.</p>
+                    </div>
+                </div>
+                
+                <div class="equipment-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="equipment-image">
+                        <img src="images/jewelry-workshop3.jpg" alt="آزمایشگاه گوهرشناسی">
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-title">آزمایشگاه گوهرشناسی</h3>
+                        <p class="equipment-desc">مجهز به میکروسکوپ‌های پیشرفته، دستگاه‌های رفرکتومتر، دیکروسکوپ، اسپکتروسکوپ و سایر ابزارهای تشخیصی.</p>
+                    </div>
+                </div>
+                
+                <div class="equipment-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="equipment-image">
+                        <img src="images/jewelry-workshop4.jpg" alt="سالن تکنولوژی مدرن">
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-title">سالن تکنولوژی مدرن</h3>
+                        <p class="equipment-desc">مجهز به پرینترهای سه‌بعدی، دستگاه‌های CNC، لیزر کاتر و سایر فناوری‌های پیشرفته جواهرسازی.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section id="jobs" class="jobs-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">فرصت‌های شغلی</h2>
+            <p class="section-subtitle" data-aos="fade-up">دانش‌آموختگان رشته طلاسازی می‌توانند در مشاغل متنوع و پردرآمدی مشغول به کار شوند</p>
+            
+            <div class="jobs-list">
+                <div class="job-item" data-aos="fade-up">
+                    <div class="job-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="job-title">طراح جواهرات</h3>
+                    <p class="job-desc">طراحی انواع زیورآلات و جواهرات برای برندهای معتبر یا ارائه طرح‌های مستقل به سفارش مشتریان.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۱۵ تا ۳۵ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="job-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3 class="job-title">سازنده و استادکار طلا</h3>
+                    <p class="job-desc">ساخت و تولید انواع زیورآلات و جواهرات طلا و نقره با استفاده از تکنیک‌های سنتی و مدرن.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۲۰ تا ۴۰ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="job-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3 class="job-title">کارآفرین و صاحب کسب و کار</h3>
+                    <p class="job-desc">راه‌اندازی کارگاه، فروشگاه یا برند شخصی در حوزه طراحی و ساخت جواهرات یا تجارت سنگ‌های قیمتی.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۲۵ تا ۸۰ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="job-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3 class="job-title">گوهرشناس و ارزیاب</h3>
+                    <p class="job-desc">تشخیص و ارزیابی کیفیت و اصالت سنگ‌های قیمتی و جواهرات در آزمایشگاه‌ها یا مراکز خرید و فروش.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۱۷ تا ۳۵ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="job-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="job-title">مدرس و مربی</h3>
+                    <p class="job-desc">تدریس و آموزش تکنیک‌های طلاسازی و جواهرسازی در هنرستان‌ها، آموزشگاه‌ها و دوره‌های خصوصی.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۱۲ تا ۳۰ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="job-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 class="job-title">طراح دیجیتال جواهرات</h3>
+                    <p class="job-desc">طراحی سه‌بعدی جواهرات با استفاده از نرم‌افزارهای تخصصی برای تولیدکنندگان داخلی و خارجی.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۱۸ تا ۴۵ میلیون تومان</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section id="instructors" class="instructors-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">اساتید برجسته</h2>
+            <p class="section-subtitle" data-aos="fade-up">تدریس توسط مجرب‌ترین اساتید و هنرمندان حوزه طلا و جواهر کشور</p>
+            
+            <div class="instructors-grid">
+                <div class="instructor-card" data-aos="fade-up">
+                    <div class="instructor-image">
+                        <img src="images/instructor1.jpg" alt="استاد طلاسازی">
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">استاد محمد حسینی</h3>
+                        <div class="instructor-position">مدرس ارشد طراحی جواهرات</div>
+                        <p class="instructor-bio">بیش از ۲۵ سال سابقه در طراحی جواهرات، برنده چندین جایزه بین‌المللی و صاحب برند معتبر در صنعت طلا و جواهر.</p>
+                    </div>
+                </div>
+                
+                <div class="instructor-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="instructor-image">
+                        <img src="images/instructor2.jpg" alt="استاد طلاسازی">
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">استاد فاطمه کریمی</h3>
+                        <div class="instructor-position">متخصص مرصع‌کاری و گوهرشناسی</div>
+                        <p class="instructor-bio">دارای گواهینامه تخصصی از انجمن گوهرشناسی اروپا، ۱۸ سال تجربه در مرصع‌کاری و آموزش تکنیک‌های پیشرفته جواهرسازی.</p>
+                    </div>
+                </div>
+                
+                <div class="instructor-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="instructor-image">
+                        <img src="images/instructor3.jpg" alt="استاد طلاسازی">
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">استاد علی رضوانی</h3>
+                        <div class="instructor-position">متخصص ریخته‌گری و تکنولوژی‌های نوین</div>
+                        <p class="instructor-bio">سابقه همکاری با برندهای معتبر بین‌المللی، متخصص در تکنیک‌های مدرن ریخته‌گری و فناوری‌های دیجیتال در صنعت جواهرات.</p>
+                    </div>
+                </div>
+                
+                <div class="instructor-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="instructor-image">
+                        <img src="images/instructor4.jpg" alt="استاد طلاسازی">
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">استاد سمیرا نیکخواه</h3>
+                        <div class="instructor-position">طراح دیجیتال و متخصص پرینت سه‌بعدی</div>
+                        <p class="instructor-bio">تحصیل‌کرده طراحی جواهرات دیجیتال از ایتالیا، آشنا به جدیدترین نرم‌افزارها و تکنیک‌های طراحی و ساخت جواهرات با فناوری‌های نوین.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title" data-aos="fade-up">آینده درخشان خود را در صنعت طلا و جواهر بسازید</h2>
+            <p class="cta-text" data-aos="fade-up">با تحصیل در رشته طلاسازی، مهارت‌های تخصصی کسب کنید و وارد یکی از سودآورترین و خلاقانه‌ترین صنایع شوید.</p>
+            <div data-aos="fade-up">
+                <a href="index.html" class="btn btn-primary">ثبت نام آنلاین</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer would go here -->
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        
+        // Tab functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons and contents
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Show corresponding content
+                    const target = this.getAttribute('data-target');
+                    document.getElementById(target).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

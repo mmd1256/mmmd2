@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رشته کامپیوتر | هنرستان کار و دانش آل آقا</title>
+    
+    <!-- متاتگ‌های SEO -->
+    <meta name="description" content="آشنایی با رشته کامپیوتر هنرستان فنی و حرفه‌ای نمونه - آموزش برنامه‌نویسی، طراحی وب، شبکه و تعمیرات سخت‌افزار با امکانات پیشرفته و اساتید مجرب">
+    <meta name="keywords" content="رشته کامپیوتر، برنامه‌نویسی، طراحی وب، شبکه، تعمیرات سخت‌افزار، هنرستان کار و دانش">
+    
+    <!-- لینک‌های CSS -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3a0ca3;
+            --accent-color: #4cc9f0;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --success-color: #2ecc71;
+            --warning-color: #f39c12;
+            --gray-color: #6c757d;
+            --light-gray: #e9ecef;
+        }
+        
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .course-hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .course-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('images/computer-pattern.svg');
+            background-size: cover;
+            opacity: 0.1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--light-gray);
+        }
+        
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+        
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        /* Features Section */
+        .features-section {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.25rem;
+            color: var(--gray-color);
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            background-color: var(--light-gray);
+            color: var(--primary-color);
+        }
+        
+        .feature-icon i {
+            font-size: 2rem;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .feature-text {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+        
+        /* Curriculum Section */
+        .curriculum-section {
+            padding: 100px 0;
+            background-color: var(--light-color);
+        }
+        
+        .curriculum-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .tab-btn {
+            padding: 15px 30px;
+            border: none;
+            background: none;
+            font-family: 'Vazirmatn', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--gray-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .tab-btn::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        
+        .tab-btn.active {
+            color: var(--primary-color);
+        }
+        
+        .tab-btn.active::after {
+            width: 100%;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .curriculum-item {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .curriculum-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .curriculum-title {
+            font-size: 1.25rem;
+            margin: 0;
+            color: var(--dark-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .curriculum-title i {
+            color: var(--primary-color);
+        }
+        
+        .curriculum-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: var(--gray-color);
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .curriculum-desc {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+        
+        /* Equipment Section */
+        .equipment-section {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .equipment-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .equipment-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .equipment-image {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+        }
+        
+        .equipment-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .equipment-card:hover .equipment-image img {
+            transform: scale(1.1);
+        }
+        
+        .equipment-info {
+            padding: 25px;
+            background-color: white;
+        }
+        
+        .equipment-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+        
+        .equipment-desc {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+        
+        /* Jobs Section */
+        .jobs-section {
+            padding: 100px 0;
+            background-color: var(--light-color);
+        }
+        
+        .jobs-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .job-item {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .job-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .job-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            color: white;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        .job-icon i {
+            font-size: 1.75rem;
+        }
+        
+        .job-title {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .job-desc {
+            color: var(--gray-color);
+            margin-bottom: 20px;
+        }
+        
+        .job-salary {
+            font-weight: 500;
+            color: var(--success-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        /* Instructors Section */
+        .instructors-section {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .instructors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .instructor-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .instructor-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .instructor-image {
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .instructor-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .instructor-social {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .instructor-card:hover .instructor-social {
+            transform: translateY(0);
+        }
+        
+        .instructor-social a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .instructor-social a:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .instructor-info {
+            padding: 25px;
+            text-align: center;
+            background-color: white;
+        }
+        
+        .instructor-name {
+            font-size: 1.25rem;
+            margin-bottom: 5px;
+            color: var(--dark-color);
+        }
+        
+        .instructor-position {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .instructor-bio {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-text {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .curriculum-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .tab-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header would go here -->
+
+    <!-- Hero Section -->
+    <section class="course-hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>رشته کامپیوتر</h1>
+                <p>آموزش تخصصی برنامه‌نویسی، طراحی وب، شبکه و تعمیرات سخت‌افزار با پیشرفته‌ترین تجهیزات و اساتید مجرب</p>
+                <div class="hero-btns">
+                    <a href="#curriculum" class="btn btn-primary">سرفصل‌های آموزشی</a>
+                    <a href="index.html" class="btn btn-outline">ثبت نام</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">چرا رشته کامپیوتر؟</h2>
+            <p class="section-subtitle" data-aos="fade-up">در عصر دیجیتال، مهارت‌های کامپیوتری به یکی از ضروری‌ترین مهارت‌های بازار کار تبدیل شده‌اند</p>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">آینده شغلی درخشان</h3>
+                    <p class="feature-text">با رشد سریع تکنولوژی، فرصت‌های شغلی متنوع و پردرآمدی برای متخصصان کامپیوتر فراهم شده است.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="feature-title">بازار کار جهانی</h3>
+                    <p class="feature-text">مهارت‌های کامپیوتری مرزهای جغرافیایی را می‌شکنند و امکان کار در سراسر جهان را فراهم می‌کنند.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="feature-title">خلاقیت و نوآوری</h3>
+                    <p class="feature-text">این رشته فرصتی برای پرورش خلاقیت و مشارکت در پروژه‌های نوآورانه و حل مسائل واقعی است.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="feature-title">پیشرفت مداوم</h3>
+                    <p class="feature-text">صنعت IT همیشه در حال تحول است و زمینه یادگیری مداوم و ارتقای مهارت‌ها را فراهم می‌کند.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-house"></i>
+                    </div>
+                    <h3 class="feature-title">انعطاف‌پذیری کاری</h3>
+                    <p class="feature-text">امکان دورکاری، کار پاره‌وقت و انعطاف‌پذیری بالا از مزایای مهم مشاغل کامپیوتری است.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3 class="feature-title">درآمد بالا</h3>
+                    <p class="feature-text">متخصصان کامپیوتر معمولاً از درآمد بالاتر نسبت به میانگین سایر مشاغل برخوردار هستند.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="curriculum-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">سرفصل‌های آموزشی</h2>
+            <p class="section-subtitle" data-aos="fade-up">آنچه در طول دوره سه ساله رشته کامپیوتر خواهید آموخت</p>
+            
+            <div class="curriculum-tabs" data-aos="fade-up">
+                <button class="tab-btn active" data-target="year1">پایه دهم</button>
+                <button class="tab-btn" data-target="year2">پایه یازدهم</button>
+                <button class="tab-btn" data-target="year3">پایه دوازدهم</button>
+                <button class="tab-btn" data-target="workshops">کارگاه‌های تخصصی</button>
+            </div>
+            
+            <div class="tab-content active" id="year1">
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-file-code"></i> مبانی برنامه‌نویسی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۲۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آشنایی با مفاهیم پایه‌ای برنامه‌نویسی، الگوریتم‌ها، فلوچارت‌ها و شروع برنامه‌نویسی با زبان پایتون برای درک بهتر منطق برنامه‌نویسی.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-cogs"></i> مبانی سخت‌افزار و سیستم‌عامل</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۹۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آشنایی با قطعات سخت‌افزاری کامپیوتر، نحوه عملکرد آن‌ها، مفاهیم پایه سیستم عامل و آشنایی با ویندوز و لینوکس.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-paint-brush"></i> طراحی گرافیک و چندرسانه‌ای</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۰۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آموزش مبانی طراحی گرافیکی، کار با نرم‌افزارهای فتوشاپ و ایلوستریتور، ویرایش تصاویر و طراحی لوگو.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-database"></i> پایگاه داده و SQL</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۸۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آشنایی با مفاهیم پایگاه داده، مدل‌سازی داده‌ها، و یادگیری زبان SQL برای کار با پایگاه‌های داده رابطه‌ای.</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="year2">
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fab fa-html5"></i> طراحی وب پیشرفته</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۲۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آموزش عمیق HTML5 و CSS3، طراحی واکنش‌گرا، فریم‌ورک‌های CSS مانند Bootstrap و شروع کار با JavaScript.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-mobile-alt"></i> برنامه‌نویسی اندروید</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۰۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آشنایی با برنامه‌نویسی موبایل، کار با Android Studio، طراحی رابط کاربری موبایل و ساخت اپلیکیشن‌های ساده.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-network-wired"></i> شبکه و امنیت اطلاعات</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۹۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">مفاهیم پایه‌ای شبکه، پروتکل‌های شبکه، راه‌اندازی شبکه‌های محلی، آشنایی با تهدیدات امنیتی و روش‌های محافظت.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-server"></i> مدیریت سرور</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۸۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">راه‌اندازی و مدیریت سرورهای وب، آشنایی با لینوکس سرور، نصب و پیکربندی سرویس‌های وب و پایگاه داده.</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="year3">
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fab fa-react"></i> برنامه‌نویسی فرانت‌اند پیشرفته</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۰۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آموزش پیشرفته JavaScript، کار با کتابخانه‌ها و فریم‌ورک‌های مدرن مانند React یا Vue.js و توسعه اپلیکیشن‌های تک صفحه‌ای.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-code-branch"></i> برنامه‌نویسی بک‌اند</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۲۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">توسعه سمت سرور با Node.js و Express یا PHP و Laravel، ارتباط با پایگاه داده، مدیریت API و احراز هویت کاربران.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-project-diagram"></i> مدیریت پروژه و متدولوژی‌های توسعه</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۷۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آشنایی با روش‌های مدیریت پروژه، متدولوژی‌های چابک مانند Scrum، کار تیمی و استفاده از ابزارهای مدیریت پروژه.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-graduation-cap"></i> پروژه نهایی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۵۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">در این بخش هنرجویان یک پروژه واقعی را از ابتدا تا انتها با استفاده از مهارت‌های آموخته شده توسعه می‌دهند و آن را به عنوان نمونه کار ارائه می‌کنند.</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="workshops">
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-tools"></i> تعمیرات سخت‌افزار</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۸۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> در طول سال</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">تشخیص و رفع مشکلات سخت‌افزاری، مونتاژ و ارتقاء کامپیوتر، تعمیر لپ‌تاپ، نصب و راه‌اندازی سیستم‌عامل و نرم‌افزارها.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fab fa-hackerrank"></i> کارگاه هوش مصنوعی و یادگیری ماشین</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۶۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> سال آخر</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آشنایی با مفاهیم هوش مصنوعی، یادگیری ماشین، پردازش داده‌ها و کار با کتابخانه‌های پایتون مانند TensorFlow و PyTorch.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fab fa-github"></i> کارگاه کنترل نسخه و همکاری تیمی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۴۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> سال دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آموزش کار با سیستم‌های کنترل نسخه مانند Git، استفاده از GitHub، همکاری در پروژه‌های تیمی و مدیریت کد.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-robot"></i> کارگاه رباتیک و اینترنت اشیاء</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۷۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> اختیاری</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آشنایی با سخت‌افزارهای آردوینو و رزبری‌پای، برنامه‌نویسی میکروکنترلرها، ساخت پروژه‌های اینترنت اشیاء و رباتیک.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section id="equipment" class="equipment-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">تجهیزات و امکانات</h2>
+            <p class="section-subtitle" data-aos="fade-up">هنرستان ما مجهز به پیشرفته‌ترین تجهیزات آموزشی در زمینه کامپیوتر است</p>
+            
+            <div class="equipment-grid">
+                <div class="equipment-card" data-aos="fade-up">
+                    <div class="equipment-image">
+                        <img src="images/computer-lab.jpg" alt="آزمایشگاه کامپیوتر">
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-title">آزمایشگاه برنامه‌نویسی</h3>
+                        <p class="equipment-desc">مجهز به ۲۵ کامپیوتر قدرتمند با جدیدترین نسخه‌های نرم‌افزارهای برنامه‌نویسی و طراحی وب.</p>
+                    </div>
+                </div>
+                
+                <div class="equipment-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="equipment-image">
+                        <img src="images/hardware-lab.jpg" alt="کارگاه سخت‌افزار">
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-title">کارگاه سخت‌افزار و تعمیرات</h3>
+                        <p class="equipment-desc">مجهز به انواع قطعات سخت‌افزاری، ابزارهای تعمیر و عیب‌یابی تخصصی برای آموزش عملی.</p>
+                    </div>
+                </div>
+                
+                <div class="equipment-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="equipment-image">
+                        <img src="images/network-lab.jpg" alt="آزمایشگاه شبکه">
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-title">آزمایشگاه شبکه</h3>
+                        <p class="equipment-desc">مجهز به تجهیزات شبکه نظیر روتر، سوئیچ، رک و تجهیزات بی‌سیم برای آموزش عملی شبکه.</p>
+                    </div>
+                </div>
+                
+                <div class="equipment-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="equipment-image">
+                        <img src="images/iot-lab.jpg" alt="آزمایشگاه اینترنت اشیاء">
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-title">کارگاه اینترنت اشیاء و رباتیک</h3>
+                        <p class="equipment-desc">مجهز به انواع بردهای میکروکنترلر، سنسورها، قطعات رباتیک و تجهیزات الکترونیکی.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section id="jobs" class="jobs-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">فرصت‌های شغلی</h2>
+            <p class="section-subtitle" data-aos="fade-up">دانش‌آموختگان رشته کامپیوتر می‌توانند در مشاغل متنوع و پردرآمدی مشغول به کار شوند</p>
+            
+            <div class="jobs-list">
+                <div class="job-item" data-aos="fade-up">
+                    <div class="job-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="job-title">توسعه‌دهنده وب</h3>
+                    <p class="job-desc">طراحی و توسعه وب‌سایت‌ها و اپلیکیشن‌های تحت وب با استفاده از HTML، CSS، JavaScript و فریم‌ورک‌های مدرن.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۱۵ تا ۳۵ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="job-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="job-title">توسعه‌دهنده موبایل</h3>
+                    <p class="job-desc">طراحی و توسعه اپلیکیشن‌های موبایل برای سیستم‌عامل‌های اندروید و iOS با استفاده از زبان‌های برنامه‌نویسی مناسب.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۱۸ تا ۴۰ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="job-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="job-title">متخصص امنیت شبکه</h3>
+                    <p class="job-desc">تأمین امنیت شبکه‌ها و سیستم‌های کامپیوتری، شناسایی آسیب‌پذیری‌ها و حفاظت از داده‌ها در برابر تهدیدات سایبری.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۲۰ تا ۴۵ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="job-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="job-title">مدیر سیستم و شبکه</h3>
+                    <p class="job-desc">نصب، پیکربندی و نگهداری سرورها، سیستم‌عامل‌ها و تجهیزات شبکه برای تضمین عملکرد مناسب زیرساخت‌های IT.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۱۷ تا ۳۸ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="job-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="job-title">تکنسین سخت‌افزار</h3>
+                    <p class="job-desc">تعمیر، نگهداری و عیب‌یابی سخت‌افزارهای کامپیوتری، نصب و پیکربندی سیستم‌های کامپیوتری و شبکه‌ها.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۱۲ تا ۲۵ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="job-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="job-title">متخصص پایگاه داده</h3>
+                    <p class="job-desc">طراحی، پیاده‌سازی و مدیریت پایگاه‌های داده، بهینه‌سازی عملکرد، تضمین امنیت و یکپارچگی داده‌ها.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۱۶ تا ۳۵ میلیون تومان</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section id="instructors" class="instructors-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">اساتید برجسته</h2>
+            <p class="section-subtitle" data-aos="fade-up">تدریس توسط متخصصان باتجربه و فعال در صنعت IT</p>
+            
+            <div class="instructors-grid">
+                <div class="instructor-card" data-aos="fade-up">
+                    <div class="instructor-image">
+                        <img src="images/instructor1.jpg" alt="دکتر محمدی">
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">دکتر محمدی</h3>
+                        <div class="instructor-position">متخصص برنامه‌نویسی و هوش مصنوعی</div>
+                        <p class="instructor-bio">دکترای هوش مصنوعی از دانشگاه صنعتی شریف با ۱۵ سال سابقه تدریس و فعالیت در صنعت IT</p>
+                    </div>
+                </div>
+                
+                <div class="instructor-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="instructor-image">
+                        <img src="images/instructor2.jpg" alt="مهندس رضایی">
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">مهندس رضایی</h3>
+                        <div class="instructor-position">متخصص شبکه و امنیت</div>
+                        <p class="instructor-bio">دارای گواهینامه‌های معتبر CCNP و CEH با سابقه کار در شرکت‌های بزرگ IT</p>
+                    </div>
+                </div>
+                
+                <div class="instructor-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="instructor-image">
+                        <img src="images/instructor3.jpg" alt="خانم حسینی">
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">خانم حسینی</h3>
+                        <div class="instructor-position">متخصص طراحی وب</div>
+                        <p class="instructor-bio">۱۰ سال تجربه در توسعه وب فرانت‌اند و مدیر فنی استارت‌آپ‌های موفق در حوزه وب</p>
+                    </div>
+                </div>
+                
+                <div class="instructor-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="instructor-image">
+                        <img src="images/instructor4.jpg" alt="مهندس علوی">
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">مهندس علوی</h3>
+                        <div class="instructor-position">متخصص سخت‌افزار و رباتیک</div>
+                        <p class="instructor-bio">کارشناس ارشد الکترونیک با تجربه ساخت پروژه‌های رباتیک و اینترنت اشیاء</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title" data-aos="fade-up">آینده شغلی خود را از امروز بسازید</h2>
+            <p class="cta-text" data-aos="fade-up">با تحصیل در رشته کامپیوتر هنرستان فنی و حرفه‌ای نمونه، مهارت‌های کاربردی و عملی را بیاموزید و برای بازار کار آماده شوید.</p>
+            <div data-aos="fade-up">
+                <a href="index.html" class="btn btn-primary">ثبت نام آنلاین</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer would go here -->
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        
+        // Tab functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons and contents
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Show corresponding content
+                    const target = this.getAttribute('data-target');
+                    document.getElementById(target).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

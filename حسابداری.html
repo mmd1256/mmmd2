@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رشته حسابداری | هنرستان کار و دانش آل آقا</title>
+    
+    <!-- متاتگ‌های SEO -->
+    <meta name="description" content="آشنایی با رشته حسابداری هنرستان فنی و حرفه‌ای نمونه - آموزش اصول حسابداری، نرم‌افزارهای مالی، حسابرسی و مالیات با امکانات پیشرفته و اساتید مجرب">
+    <meta name="keywords" content="رشته حسابداری، حسابرسی، نرم‌افزارهای مالی، مالیات، هنرستان کار و دانش امور مالی">
+    
+    <!-- لینک‌های CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #2c7be5;
+            --secondary-color: #1b4f90;
+            --accent-color: #25c3d9;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --success-color: #2ecc71;
+            --warning-color: #f39c12;
+            --gray-color: #6c757d;
+            --light-gray: #e9ecef;
+        }
+        
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .course-hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .course-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('images/accounting-pattern.svg');
+            background-size: cover;
+            opacity: 0.1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--light-gray);
+        }
+        
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+        
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        /* Features Section */
+        .features-section {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.25rem;
+            color: var(--gray-color);
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            background-color: var(--light-gray);
+            color: var(--primary-color);
+        }
+        
+        .feature-icon i {
+            font-size: 2rem;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .feature-text {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+        
+        /* Curriculum Section */
+        .curriculum-section {
+            padding: 100px 0;
+            background-color: var(--light-color);
+        }
+        
+        .curriculum-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .tab-btn {
+            padding: 15px 30px;
+            border: none;
+            background: none;
+            font-family: 'Vazirmatn', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--gray-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .tab-btn::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        
+        .tab-btn.active {
+            color: var(--primary-color);
+        }
+        
+        .tab-btn.active::after {
+            width: 100%;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .curriculum-item {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .curriculum-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .curriculum-title {
+            font-size: 1.25rem;
+            margin: 0;
+            color: var(--dark-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .curriculum-title i {
+            color: var(--primary-color);
+        }
+        
+        .curriculum-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: var(--gray-color);
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .curriculum-desc {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+        
+        /* Equipment Section */
+        .equipment-section {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .equipment-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .equipment-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .equipment-image {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+        }
+        
+        .equipment-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .equipment-card:hover .equipment-image img {
+            transform: scale(1.1);
+        }
+        
+        .equipment-info {
+            padding: 25px;
+            background-color: white;
+        }
+        
+        .equipment-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+        
+        .equipment-desc {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+        
+        /* Jobs Section */
+        .jobs-section {
+            padding: 100px 0;
+            background-color: var(--light-color);
+        }
+        
+        .jobs-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .job-item {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .job-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .job-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            color: white;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        .job-icon i {
+            font-size: 1.75rem;
+        }
+        
+        .job-title {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .job-desc {
+            color: var(--gray-color);
+            margin-bottom: 20px;
+        }
+        
+        .job-salary {
+            font-weight: 500;
+            color: var(--success-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        /* Instructors Section */
+        .instructors-section {
+            padding: 100px 0;
+            background-color: white;
+        }
+        
+        .instructors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .instructor-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .instructor-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .instructor-image {
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .instructor-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .instructor-social {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .instructor-card:hover .instructor-social {
+            transform: translateY(0);
+        }
+        
+        .instructor-social a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .instructor-social a:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .instructor-info {
+            padding: 25px;
+            text-align: center;
+            background-color: white;
+        }
+        
+        .instructor-name {
+            font-size: 1.25rem;
+            margin-bottom: 5px;
+            color: var(--dark-color);
+        }
+        
+        .instructor-position {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .instructor-bio {
+            color: var(--gray-color);
+            margin-bottom: 0;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta-text {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .curriculum-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .tab-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header would go here -->
+
+    <!-- Hero Section -->
+    <section class="course-hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>رشته حسابداری</h1>
+                <p>آموزش تخصصی اصول حسابداری، نرم‌افزارهای مالی، حسابرسی و مالیات با پیشرفته‌ترین امکانات و اساتید مجرب</p>
+                <div class="hero-btns">
+                    <a href="#curriculum" class="btn btn-primary">سرفصل‌های آموزشی</a>
+                    <a href="index.html" class="btn btn-outline">ثبت نام</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">چرا رشته حسابداری؟</h2>
+            <p class="section-subtitle" data-aos="fade-up">حسابداری زبان تجارت است و متخصصان این رشته در همه صنایع و کسب و کارها مورد نیاز هستند</p>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="feature-title">بازار کار گسترده</h3>
+                    <p class="feature-text">هر سازمان و شرکتی به متخصصان مالی نیاز دارد و این رشته یکی از پرتقاضاترین رشته‌ها در بازار کار است.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">امنیت شغلی</h3>
+                    <p class="feature-text">حسابداری از معدود مشاغلی است که در همه شرایط اقتصادی مورد نیاز بوده و امنیت شغلی بالایی دارد.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="feature-title">مسیر پیشرفت روشن</h3>
+                    <p class="feature-text">امکان ارتقا به سمت‌های مدیریتی مانند مدیر مالی، حسابرس ارشد یا مشاور مالی در سازمان‌های بزرگ وجود دارد.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="feature-title">تنوع محیط کار</h3>
+                    <p class="feature-text">امکان فعالیت در صنایع مختلف از بانک‌ها و موسسات مالی گرفته تا شرکت‌های تولیدی، خدماتی و نهادهای دولتی.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-house"></i>
+                    </div>
+                    <h3 class="feature-title">امکان کار مستقل</h3>
+                    <p class="feature-text">می‌توانید به‌صورت مستقل به ارائه خدمات حسابداری و مشاوره مالی به شرکت‌ها و افراد بپردازید.</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3 class="feature-title">درآمد مناسب</h3>
+                    <p class="feature-text">متخصصان حسابداری معمولاً از درآمد بالاتر از میانگین جامعه برخوردار بوده و با کسب تجربه، درآمد آنها افزایش می‌یابد.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="curriculum-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">سرفصل‌های آموزشی</h2>
+            <p class="section-subtitle" data-aos="fade-up">آنچه در طول دوره سه ساله رشته حسابداری خواهید آموخت</p>
+            
+            <div class="curriculum-tabs" data-aos="fade-up">
+                <button class="tab-btn active" data-target="year1">پایه دهم</button>
+                <button class="tab-btn" data-target="year2">پایه یازدهم</button>
+                <button class="tab-btn" data-target="year3">پایه دوازدهم</button>
+                <button class="tab-btn" data-target="workshops">کارگاه‌های تخصصی</button>
+            </div>
+            
+            <div class="tab-content active" id="year1">
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-calculator"></i> اصول حسابداری ۱</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۱۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آشنایی با مفاهیم پایه حسابداری، معادله حسابداری، ثبت رویدادهای مالی، اسناد حسابداری و دفاتر قانونی.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-desktop"></i> مبانی رایانه و کاربرد آن در حسابداری</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۹۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آشنایی با کامپیوتر، سیستم‌عامل، کار با نرم‌افزارهای آفیس (Word, Excel) و کاربرد آنها در امور حسابداری.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-chart-bar"></i> ریاضی و آمار مقدماتی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۰۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آموزش مباحث ریاضی مورد نیاز در حسابداری، محاسبات مالی، بهره، درصدگیری و آشنایی با مفاهیم آماری.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-file-invoice-dollar"></i> مستندسازی و گزارش‌نویسی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۸۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آموزش اصول مستندسازی در حسابداری، تهیه و تنظیم گزارش‌های مالی، مکاتبات اداری و مستندات قانونی.</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="year2">
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-balance-scale"></i> اصول حسابداری ۲</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۲۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">حسابداری شرکت‌های بازرگانی، ثبت عملیات خرید و فروش، محاسبه بهای تمام شده، مالیات بر ارزش افزوده و تهیه صورت‌های مالی.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-coins"></i> حسابداری موجودی‌ها و اموال</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۰۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">روش‌های ارزیابی موجودی‌ها، کنترل داخلی موجودی‌ها، حسابداری دارایی‌های ثابت، محاسبه و ثبت استهلاک.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-hand-holding-usd"></i> حسابداری حقوق و دستمزد</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۹۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آشنایی با قوانین کار و تأمین اجتماعی، محاسبه حقوق و دستمزد، بیمه، مالیات، عیدی و سنوات، تهیه لیست حقوق و دستمزد.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-laptop-code"></i> نرم‌افزارهای حسابداری ۱</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۰۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آموزش کار با نرم‌افزارهای متداول حسابداری، ثبت اسناد حسابداری، صدور فاکتور، مدیریت دفاتر و گزارش‌گیری.</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="year3">
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-search-dollar"></i> حسابرسی مقدماتی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۱۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">اصول و مفاهیم حسابرسی، کنترل‌های داخلی، روش‌های حسابرسی، آزمون‌های محتوا و گزارش‌های حسابرسی.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-file-invoice"></i> مالیات و قوانین مالیاتی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۰۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم اول</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آشنایی با قوانین مالیاتی، مالیات بر درآمد، مالیات تکلیفی، مالیات بر ارزش افزوده، تنظیم اظهارنامه مالیاتی.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-industry"></i> حسابداری بهای تمام شده</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۲۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">اصول حسابداری صنعتی، محاسبه بهای تمام شده محصولات، روش‌های هزینه‌یابی، کنترل هزینه و بودجه‌بندی تولید.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-project-diagram"></i> پروژه نهایی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۱۲۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> ترم دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">اجرای یک پروژه عملی کامل شامل راه‌اندازی سیستم حسابداری یک شرکت، ثبت اسناد و تهیه گزارش‌های مالی.</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="workshops">
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-laptop-code"></i> کارگاه نرم‌افزارهای حسابداری پیشرفته</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۹۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> سال آخر</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آموزش تخصصی نرم‌افزارهای حسابداری پیشرفته مانند همکاران سیستم، سپیدار، پارسیان و تیزهوش به صورت عملی و کاربردی.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-file-excel"></i> کارگاه اکسل پیشرفته در حسابداری</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۶۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> سال دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">استفاده از توابع پیشرفته اکسل در محاسبات مالی، تحلیل داده‌ها، داشبوردهای مالی و تهیه گزارش‌های تحلیلی.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-piggy-bank"></i> کارگاه خدمات بانکی و بیمه</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۷۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> سال دوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">آشنایی با عملیات بانکی، اعتبارات اسنادی، ضمانت‌نامه‌ها، بیمه‌های تجاری و مسئولیت، مغایرت‌گیری و صورت تطبیق بانکی.</p>
+                </div>
+                
+                <div class="curriculum-item" data-aos="fade-up">
+                    <div class="curriculum-header">
+                        <h3 class="curriculum-title"><i class="fas fa-chart-pie"></i> کارگاه تجزیه و تحلیل صورت‌های مالی</h3>
+                        <div class="curriculum-meta">
+                            <span class="meta-item"><i class="fas fa-clock"></i> ۸۰ ساعت</span>
+                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> سال سوم</span>
+                        </div>
+                    </div>
+                    <p class="curriculum-desc">تحلیل نسبت‌های مالی، بررسی روند سودآوری و نقدینگی، ارزیابی عملکرد مالی شرکت‌ها و تصمیم‌گیری مالی.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Equipment Section -->
+    <section id="equipment" class="equipment-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">تجهیزات و امکانات</h2>
+            <p class="section-subtitle" data-aos="fade-up">هنرستان ما مجهز به پیشرفته‌ترین امکانات آموزشی در زمینه حسابداری است</p>
+            
+            <div class="equipment-grid">
+                <div class="equipment-card" data-aos="fade-up">
+                    <div class="equipment-image">
+                        <img src="images/accounting-lab1.jpg" alt="آزمایشگاه حسابداری">
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-title">آزمایشگاه نرم‌افزارهای حسابداری</h3>
+                        <p class="equipment-desc">مجهز به ۲۵ کامپیوتر با جدیدترین نرم‌افزارهای حسابداری و مالی، پروژکتور برای آموزش گروهی و سیستم شبکه مخصوص شبیه‌سازی محیط شرکت‌ها.</p>
+                    </div>
+                </div>
+                
+                <div class="equipment-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="equipment-image">
+                        <img src="images/accounting-lab2.jpg" alt="سالن کنفرانس">
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-title">سالن کنفرانس و ارائه پروژه</h3>
+                        <p class="equipment-desc">فضای مدرن برای برگزاری سمینارها، ارائه پروژه‌های هنرجویان، دعوت از متخصصان صنعت و برگزاری جلسات شبیه‌سازی شده تجاری.</p>
+                    </div>
+                </div>
+                
+                <div class="equipment-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="equipment-image">
+                        <img src="images/accounting-lab3.jpg" alt="کتابخانه تخصصی">
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-title">کتابخانه تخصصی مالی و حسابداری</h3>
+                        <p class="equipment-desc">دارای منابع تخصصی به‌روز در زمینه حسابداری، قوانین مالیاتی، استانداردهای حسابداری و مجلات تخصصی داخلی و خارجی.</p>
+                    </div>
+                </div>
+                
+                <div class="equipment-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="equipment-image">
+                        <img src="images/accounting-lab4.jpg" alt="اتاق شبیه‌سازی">
+                    </div>
+                    <div class="equipment-info">
+                        <h3 class="equipment-title">اتاق شبیه‌سازی محیط کار</h3>
+                        <p class="equipment-desc">محیطی شبیه‌سازی شده از یک دپارتمان مالی واقعی با تجهیزات اداری مناسب برای تمرین عملی بایگانی، مستندسازی و فرآیندهای مالی.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Jobs Section -->
+    <section id="jobs" class="jobs-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">فرصت‌های شغلی</h2>
+            <p class="section-subtitle" data-aos="fade-up">دانش‌آموختگان رشته حسابداری می‌توانند در مشاغل متنوع و پردرآمدی مشغول به کار شوند</p>
+            
+            <div class="jobs-list">
+                <div class="job-item" data-aos="fade-up">
+                    <div class="job-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3 class="job-title">کمک حسابدار</h3>
+                    <p class="job-desc">همکاری در ثبت اسناد مالی، بایگانی مدارک، ورود اطلاعات، تهیه صورت‌مغایرت بانکی و کمک در تهیه گزارش‌های مالی.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۸ تا ۱۵ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="job-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="job-title">حسابدار فروش و خرید</h3>
+                    <p class="job-desc">ثبت و پیگیری فاکتورهای خرید و فروش، ثبت دریافت‌ها و پرداخت‌ها، محاسبه مالیات بر ارزش افزوده و تهیه گزارش‌های فروش.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۱۲ تا ۲۰ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="job-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3 class="job-title">حسابدار حقوق و دستمزد</h3>
+                    <p class="job-desc">محاسبه حقوق و مزایا، تهیه لیست بیمه و مالیات، صدور فیش حقوقی، ثبت هزینه‌های پرسنلی و تهیه گزارش‌های مربوطه.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۱۵ تا ۲۵ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="job-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3 class="job-title">کمک حسابرس</h3>
+                    <p class="job-desc">کمک در فرآیند حسابرسی، بررسی اسناد و مدارک، انجام آزمون‌های حسابرسی و تهیه کاربرگ‌ها تحت نظارت حسابرس ارشد.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۱۴ تا ۲۸ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="job-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="job-title">کارشناس امور مالیاتی</h3>
+                    <p class="job-desc">تنظیم اظهارنامه‌های مالیاتی، محاسبه انواع مالیات، تهیه گزارش‌های مالیاتی و پیگیری امور مالیاتی شرکت‌ها و اشخاص.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۱۸ تا ۳۵ میلیون تومان</span>
+                    </div>
+                </div>
+                
+                <div class="job-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="job-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="job-title">مشاور و خدمات حسابداری</h3>
+                    <p class="job-desc">ارائه خدمات حسابداری به شرکت‌های کوچک و متوسط، راه‌اندازی سیستم حسابداری، مشاوره مالیاتی و مشاوره مالی.</p>
+                    <div class="job-salary">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>میانگین درآمد: ۲۰ تا ۴۵ میلیون تومان</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Instructors Section -->
+    <section id="instructors" class="instructors-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">اساتید برجسته</h2>
+            <p class="section-subtitle" data-aos="fade-up">تدریس توسط متخصصان باتجربه و فعال در صنعت حسابداری و امور مالی</p>
+            
+            <div class="instructors-grid">
+                <div class="instructor-card" data-aos="fade-up">
+                    <div class="instructor-image">
+                        <img src="images/instructor1.jpg" alt="استاد حسابداری">
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">دکتر رضا محمدی</h3>
+                        <div class="instructor-position">مدرس ارشد حسابداری مالی</div>
+                        <p class="instructor-bio">دکترای حسابداری با ۱۵ سال سابقه آموزش و تجربه عملی به عنوان مدیر مالی در شرکت‌های بزرگ، مشاور مالی و عضو انجمن حسابداران خبره.</p>
+                    </div>
+                </div>
+                
+                <div class="instructor-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="instructor-image">
+                        <img src="images/instructor2.jpg" alt="استاد حسابداری">
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">خانم مهندس زهرا کریمی</h3>
+                        <div class="instructor-position">متخصص نرم‌افزارهای حسابداری</div>
+                        <p class="instructor-bio">کارشناس ارشد مهندسی صنایع، مسلط به نرم‌افزارهای تخصصی حسابداری، پیاده‌ساز سیستم‌های مالی و مدرس دانشگاه در زمینه سیستم‌های اطلاعاتی حسابداری.</p>
+                    </div>
+                </div>
+                
+                <div class="instructor-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="instructor-image">
+                        <img src="images/instructor3.jpg" alt="استاد حسابداری">
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">آقای حسینی</h3>
+                        <div class="instructor-position">متخصص امور مالیاتی و حسابرسی</div>
+                        <p class="instructor-bio">حسابدار رسمی با ۲۰ سال سابقه در سازمان امور مالیاتی و موسسات حسابرسی، مشاور مالیاتی شرکت‌های بزرگ و مدرس دوره‌های تخصصی مالیات.</p>
+                    </div>
+                </div>
+                
+                <div class="instructor-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="instructor-image">
+                        <img src="images/instructor4.jpg" alt="استاد حسابداری">
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="instructor-info">
+                        <h3 class="instructor-name">خانم مهندس جعفری</h3>
+                        <div class="instructor-position">متخصص حسابداری صنعتی</div>
+                        <p class="instructor-bio">کارشناس ارشد حسابداری مدیریت، متخصص در زمینه بهای تمام شده و بودجه‌ریزی، مشاور مالی شرکت‌های تولیدی و مدرس دانشگاه.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title" data-aos="fade-up">آینده شغلی خود را با تخصص حسابداری تضمین کنید</h2>
+            <p class="cta-text" data-aos="fade-up">با تحصیل در رشته حسابداری، مهارت‌های کاربردی و عملی را بیاموزید و برای ورود به بازار کار آماده شوید.</p>
+            <div data-aos="fade-up">
+                <a href="index.html" class="btn btn-primary">ثبت نام آنلاین</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer would go here -->
+    
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        
+        // Tab functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons and contents
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Show corresponding content
+                    const target = this.getAttribute('data-target');
+                    document.getElementById(target).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
